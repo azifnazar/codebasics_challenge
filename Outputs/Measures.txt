@@ -1,0 +1,19 @@
+begin_value = SUMX(FILTER(df_final,df_final[Year]=2016),df_final[Total])
+
+cagr = IFERROR((([number]^(1/3))-1),BLANK())
+
+Domestic_Visitors = SUM(df_final[Total])
+
+end_value = SUMX(FILTER(df_final,df_final[Year]=2019),df_final[Total])
+
+Foreign_Visitors = SUM(df_for[total])
+
+number = [end_value]/[begin_value]
+
+ratio = IFERROR([Domestic_Visitors]/[Foreign_Visitors],0)
+
+total_pop_19 = SUM(Sheet1[Total Population 2019(estimated)])
+
+total_visitors = SUMX(FILTER(df_final,df_final[Year]=2019),df_final[Total])+SUMX(FILTER(df_for,df_for[Year]=2019),df_for[total])
+
+vis_pop_ratio = IFERROR(([total_visitors]/[total_pop_19]),0)
