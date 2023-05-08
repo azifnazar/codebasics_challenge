@@ -47,6 +47,7 @@ Filled missing data for some districts, mainly in the data of the year 2016 with
 
 #### 1) [Python Jupyter Notebook Files](https://github.com/azifnazar/codebasics_challenge/tree/main/python_files)
 #### 2) [PowerBI files](https://github.com/azifnazar/codebasics_challenge/tree/main/Outputs)
+#### 3) [PowerBI Measures created](https://github.com/azifnazar/codebasics_challenge/blob/main/Outputs/Measures.txt)
 
 
 
